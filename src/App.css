@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    text-align: center;
+}
+
+h1.heading {
+    font-size: 4.25rem;
+    font-family: 'League Gothic', sans-serif;
+    margin-bottom: 0;
+}
+
+p.subtitle {
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+p.subtitle a {
+    text-decoration: none;
+}
+
+div.searchbar-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+input.searchbar {
+    height: 1.75rem;
+    background-color: #fff;
+    width: 40%;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.15s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+input.searchbar:focus {
+    border: 2px solid #333;
+}
+
+div.card-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+div.card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.card .imgholder img {
+    height: 15rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.imgholder {
+    text-align: center;
+}
+
+.card div.details {
+    padding: 5%;
+    font-family: 'Merriweather', serif;
+}
+
+h3.card-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+p.detail {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+p.detail-light {
+    margin-top: 0;
+    font-size: 0.9rem;
+    color: #7d7d7d;
+}
+
+p.contributor {
+    font-size: 0.9rem;
+    margin: 0;
+    margin-bottom: 0.25rem;
+    font-style: italic;
+}
+
+div.load {
+    width: 17.5%;
+    margin-right: 41.25%;
+    margin-left: 41.25%;
+    display: flex;
+}
+
+@keyframes spin {
+    0% {transform:rotate(0deg) scale(1);}
+    25% {transform:rotate(180deg) scale(1.25);}
+    50% {transform: rotate(360deg) scale(1);}
+    75% {transform: rotate(540deg) scale(0.75);}
+    100% {transform:rotate(720deg) scale(1);}
+  }
+
+div.load svg {
+    stroke: #333;
+    stroke-width: 5%;
+    animation: spin 2.5s linear infinite;
+}
